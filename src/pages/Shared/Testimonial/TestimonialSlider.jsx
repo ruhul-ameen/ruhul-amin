@@ -173,7 +173,7 @@ const TestimonialSlider = () => {
             <button
               onClick={showForm}
               className="btn w-max rounded-none border bg-green-400 text-white hover:border-green-400 hover:text-green-400">
-              Write your thought
+              Rate me!
             </button>
           </div>
 
@@ -191,7 +191,7 @@ const TestimonialSlider = () => {
                 onClick={hiddenForm}
                 type="submit"
                 className="btn w-max rounded-none border bg-green-400 text-white hover:border-green-400 hover:text-green-400">
-                Post Comment
+                Submit
               </button>
             </div>
           </form>
