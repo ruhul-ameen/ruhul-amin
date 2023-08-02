@@ -8,69 +8,23 @@ const TestimonialSlider = () => {
     {
       image: "img1",
       author: "John Doe",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-              been acquainted with some fantastic people along the way. This
-              page will provide insight into my dealings with them, and
-              hopefully give you a further indication of the quality of my
-              work and of me as a name.`,
+      quote: `An exceptional front-end developer, He blends creativity and technical expertise to craft visually stunning and user-friendly websites. His passion for perfection, open communication, and dedication to deadlines make him an invaluable asset to any team. Highly recommended for those seeking a front-end wizard to elevate your digital presence and leave a lasting impression on users.`,
       role: "ceo",
-      company: "abc company",
+      company: "UI/UX Designer",
     },
     {
       image: "img2",
       author: "Thomas",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-          been acquainted with some fantastic people along the way. This
-          page will provide insight into my dealings with them, and
-          hopefully give you a further indication of the quality of my
-          work and of me as a name.`,
+      quote: `He is a highly skilled front-end developer, breathing life into websites with his artistic touch and seamless interactions. His commitment to delivering captivating user experiences sets you apart, making him the ideal choice for any project seeking excellence in design and functionality.`,
       role: "ceo",
-      company: "abc company",
+      company: "X-Part",
     },
     {
       image: "img3",
       author: "Robert",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-              been acquainted with some fantastic people along the way. This
-              page will provide insight into my dealings with them, and
-              hopefully give you a further indication of the quality of my
-              work and of me as a name.`,
-      role: "ceo",
-      company: "abc company",
-    },
-    {
-      image: "img4",
-      author: "Albert",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-              been acquainted with some fantastic people along the way. This
-              page will provide insight into my dealings with them, and
-              hopefully give you a further indication of the quality of my
-              work and of me as a name.`,
-      role: "ceo",
-      company: "abc company",
-      id: 4,
-    },
-    {
-      image: "img5",
-      author: "Alisa",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-              been acquainted with some fantastic people along the way. This
-              page will provide insight into my dealings with them, and
-              hopefully give you a further indication of the quality of my
-              work and of me as a name.`,
-      role: "ceo",
-      company: "abc company",
-    },
-    {
-      image: "img6",
-      author: "Alex",
-      quote: `Over the years I’ve accumulated thousands of projects and have
-              been acquainted with some fantastic people along the way. This
-              page will provide insight into my dealings with them, and
-              hopefully give you a further indication of the quality of my
-              work and of me as a name.`,
-      role: "ceo",
-      company: "abc company",
+      quote: `"Meet Ruhul, a front-end virtuoso who crafts digital wonders with an artist's eye and a coder's precision. His ability to blend aesthetics and functionality seamlessly creates an enchanting user experience that leaves a lasting impact. If you seek a dedicated front-end developer to bring your visions to life, He is the answer.`,
+      role: "Developer",
+      company: "Core x coder",
     },
   ];
 
@@ -147,18 +101,18 @@ const TestimonialSlider = () => {
                 className="testimonial-item rounded-lg shadow-md shadow-green-200 p-8 mb-10">
                 {/* <img src={testimonial.image} alt={testimonial.name} /> */}
                 <div className="testimonial-quote">
-                  <p className="text-gray-500 text-sm my-2">
+                  <p className="text-gray-900 not-italic text-sm my-2">
                     {testimonial.quote}
                   </p>
                 </div>
                 <div className="testimonial-info">
-                  <h3 className="testimonial-name text-lg font-bold mt-4">
+                  <h3 className="testimonial-name text-xl font-bold mt-4">
                     {testimonial.author}
                   </h3>
                   <h5 className="testimonial-role uppercase text-xs font-semibold">
                     {testimonial.role}
                   </h5>
-                  <h5 className="testimonial-role text-xs font-semibold capitalize">
+                  <h5 className="testimonial-role text-sm font-semibold capitalize">
                     {testimonial.company}
                   </h5>
                 </div>

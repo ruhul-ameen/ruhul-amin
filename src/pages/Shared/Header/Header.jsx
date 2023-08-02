@@ -88,7 +88,7 @@ const Header = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/14p3xMlDOTgA4rym6tEfls93uvlBpTgxZ/view">
+            href="https://drive.google.com/file/d/16S-suhfSBaLGHVjdJ9z7t-nTcTfCmA3M/view?usp=drive_link">
             <button className="button" type="button">
               <span className="button__text">RESUME</span>
               <span className="button__icon">

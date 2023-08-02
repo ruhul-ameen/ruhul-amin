@@ -3,6 +3,7 @@ import carDoctor from "../../assets/projects/car-doctor.png";
 import emaJhon from "../../assets/projects/ema-jhon.png";
 import panda from "../../assets/projects/panda-e-commerce.png";
 import edu from "../../assets/projects/proedu.png";
+import ItemSocialText from "../Shared/ItemSocial/ItemSocialText";
 
 const projects = [
   {
@@ -41,21 +42,27 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <div className="flex justify-center items-center pt-4 pb-0 mb-3 mt-20">
-        <h5 className=" text-center w-max px-6 py-2 text-sm text-green-500 uppercase bg-green-100">
+      <div className="flex justify-center items-center my-24">
+        <h5 className="text-center text-4xl uppercase bg-clip-text text-transparent bg-gradient-to-l from-cyan-400 to-green-400 animate-jump-in">
           Projects
         </h5>
       </div>
-      <div className="flex flex-col justify-center items-center md:px-32 h-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-y-20 bg-white w-11/12 md:w-full mt-6 mb-10 p-6 shadow-box-shadow py-10">
+      <div className="flex flex-col justify-center items-center h-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project) => (
             <Project key={project.id} project={project}></Project>
           ))}
         </div>
-        <button className="btn border-green-500 text-green-500 rounded-sm bg-transparent hover:bg-green-500 hover:text-white mb-20 uppercase">
-          More Projects
-        </button>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/ruhul-ameen?tab=repositories">
+          <button className="btn border-green-500 text-green-500 rounded-sm bg-transparent hover:bg-green-500 hover:text-white my-20 uppercase">
+            More Projects
+          </button>
+        </a>
       </div>
+      <ItemSocialText></ItemSocialText>
     </>
   );
 };

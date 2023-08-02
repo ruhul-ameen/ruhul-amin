@@ -3,7 +3,9 @@ const Project = ({ project }) => {
   return (
     <>
       <div>
-        <div className="card h-full w-80 md:w-96 border border-green-300 rounded-none hover:shadow-green-500 hover:shadow-xl">
+        <div
+          className="card h-full w-80 md:w-96 border border-green-300 rounded-none hover:shadow-green-300 hover:shadow-md animate-fade-up animate-once animate-ease-linear animate-alternate animate-fill-both
+">
           <figure>
             <img
               src={img}

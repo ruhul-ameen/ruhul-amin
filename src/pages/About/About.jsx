@@ -1,11 +1,12 @@
 import profile from "../../assets/logo.jpg";
 import SocialItems from "../Shared/ItemSocial/ItemSocial";
+import ItemSocialText from "../Shared/ItemSocial/ItemSocialText";
 const About = () => {
   return (
     <div className="flex justify-center items-center lg:px-40">
       <div className="w-full mt-16 mb-16 py-6 hover:shadow-box-shadow ">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-0 py-2 px-0 md:px-8 mb-4">
-          <div className="flex flex-col justify-center items-center w-6/12 md:w-2/6">
+          <div className="flex flex-col justify-center items-center w-6/12 md:w-2/6 animate-fade-right animate-duration-[2000ms">
             <div>
               <img
                 src={profile}
@@ -28,40 +29,42 @@ const About = () => {
           </div>
           <div className=" md:w-4/6 px-2">
             <div className="flex justify-center md:justify-start items-center">
-              <h4 className=" w-28 text-center px-4 py-2 left-2/4 md:text-left text-green-600 uppercase text-sm bg-green-100 mb-3">
+              <h4 className=" text-center left-2/4 md:text-left font-bold uppercase text-lg mb-3 bg-clip-text text-transparent bg-gradient-to-l from-lime-400 to-green-400 animate-jump-in">
                 about me
               </h4>
             </div>
-            <h1 className="font-semibold text-lg">
-              Why hire me for your next project?
-            </h1>
-            <p className="text-base break-words text-left">
-              I am an innovative and passionate front-end developer with strong
-              problem-solving skills, dedicated to crafting high-quality web
-              applications that captivate users
-            </p>
-            <br />
-            <p className="text-base break-words text-left">
-              My job is to build your website so that it is functional and user
-              friendly but at the same time attractive. Moreover I add a
-              personal touch to your product and make sure that it is
-              eye-catching and easy to user. My aim is to bring across your
-              message and identity in the most creative way.
-            </p>
-            <div>
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://drive.google.com/file/d/14p3xMlDOTgA4rym6tEfls93uvlBpTgxZ/view">
-                {" "}
-                <button className="btn text-green-500 my-4 border border-green-500 rounded-none hover:bg-green-500 hover:text-white">
-                  Download CV
-                </button>
-              </a>
+            <div className=" animate-fade-left animate-duration-[2000ms]">
+              <h1 className="font-semibold text-lg">
+                Why hire me for your next project?
+              </h1>
+              <p className="text-base break-words text-left">
+                I am an innovative and passionate front-end developer with
+                strong problem-solving skills, dedicated to crafting
+                high-quality web applications that captivate users
+              </p>
+              <br />
+              <p className="text-base break-words text-left">
+                My job is to build your website so that it is functional and
+                user friendly but at the same time attractive. Moreover I add a
+                personal touch to your product and make sure that it is
+                eye-catching and easy to user. My aim is to bring across your
+                message and identity in the most creative way.
+              </p>
+              <div>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://drive.google.com/file/d/16S-suhfSBaLGHVjdJ9z7t-nTcTfCmA3M/view?usp=drive_link">
+                  {" "}
+                  <button className="btn text-green-500 my-4 border border-green-500 rounded-none hover:bg-green-500 hover:text-white">
+                    Download CV
+                  </button>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center animate-flip-down animate-duration-[2000ms]">
           <h1 className="text-2xl font-bold my-6">My Skills</h1>
           <div className="grid grid-cols-4 gap-8">
             <div className="flex flex-col items-center">
@@ -168,6 +171,7 @@ const About = () => {
           </div>
         </div>
       </div>
+      <ItemSocialText></ItemSocialText>
     </div>
   );
 };
