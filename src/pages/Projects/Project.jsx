@@ -4,8 +4,9 @@ const Project = ({ project }) => {
     <>
       <div>
         <div
-          className="card h-full w-80 md:w-96 border border-green-300 rounded-none hover:shadow-green-300 hover:shadow-md animate-fade-up animate-once animate-ease-linear animate-alternate animate-fill-both
-">
+          className="card h-full w-80 md:w-96 border border-green-300 rounded-none hover:shadow-green-300 hover:shadow-sm animate-fade-up animate-once animate-ease-linear animate-alternate animate-fill-both
+"
+        >
           <figure>
             <img
               src={img}
@@ -21,14 +22,16 @@ const Project = ({ project }) => {
                 target="_blank"
                 rel="noreferrer"
                 href={gitLink}
-                className="btn btn-outline border-green-500 text-green-500 rounded-sm w-32 mr-4 my-3 ml-4 md:ml-0 font-semibold hover:bg-green-500 hover:text-white">
+                className="btn btn-outline border-green-500 text-green-500 rounded-sm w-32 mr-4 my-3 ml-4 md:ml-0 font-semibold hover:bg-green-500 hover:text-white"
+              >
                 Github
               </a>
               <a
                 target="_blank"
                 rel="noreferrer"
                 href={liveLink}
-                className="btn outline-none bg-green-500 text-white rounded-sm w-32 mr-4 my-3 ml-4 md:ml-0 font-semibold hover:bg-white hover:text-green-500">
+                className="btn outline-none bg-green-500 text-white rounded-sm w-32 mr-4 my-3 ml-4 md:ml-0 font-semibold hover:bg-white hover:text-green-500"
+              >
                 live view
               </a>
             </div>
