@@ -19,11 +19,9 @@
 }
 .sticky-icon a:hover {
   color: #fff;
-  transform: translate(0px, 0px);
+  transform: translate(-10px, 0px);
 }
-.sticky-icon a:hover .turn {
-  transform: rotate(360deg);
-}
+
 .Facebook {
   background-color: #0cce0c;
   color: #fff;
